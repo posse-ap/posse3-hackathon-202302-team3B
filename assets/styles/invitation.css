@@ -1,0 +1,78 @@
+.invitation_hero{
+  background-size: cover;
+  width: 100%;
+  height: 320px;
+  padding: 110px 0 76px;
+  margin: 0 auto;
+}
+
+.invitation_play_hero{
+  background-image: url(../img/play_hero.jpg);
+}
+
+.invitation_study_hero{
+  background-image: url(../img/study_hero.jpg);
+}
+
+.invitation_hero::before{
+  background-color: rgba(252, 251, 251, 0.623);
+  content: "";
+  background-size: cover;
+  width: 100%;
+  height: 320px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  padding: 110px 0 76px;
+  margin: 0 auto;
+  z-index: 80;
+}
+
+.invitation_wrapper{
+  margin: 0 auto;
+  max-width: 1032px;
+  padding: 0 24px;
+  width: 100%;
+}
+
+.invitation_title{
+  position: relative;
+  padding-top: 60px;
+  z-index: 85;
+  font-size: 60px;
+}
+
+.invitation_detail{
+  position: relative;
+  z-index: 85;
+  font-size: 18px;
+}
+
+/* ヒーロー画像はここまで */
+
+.invitation_cards{
+  padding: 20px 15px;
+}
+
+.card_wrapper{
+  width: 100%;
+}
+
+.card{
+  margin: 0 auto;
+  width: 90%;
+  max-width: 800px;
+  display: flex;
+  justify-content: space-between;
+  background-color: whitesmoke;
+  height: auto;
+  padding: 20px 30px;
+  border-radius: 15px;
+  border: 2px solid rgb(17, 135, 203);
+}
+
+.card_name{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
