@@ -1,0 +1,22 @@
+.hero{
+    background-image: url(../img/profile_hero.jpg);
+    background-position: center;
+    background-size: cover;
+    height: ;
+    width: ;
+}
+.hero::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.hero_title{
+    color: black;
+    font-size: 80px;
+    padding: 100px 0 0 150px;
+}
+.hero_profile{
+    color: black;
+    float: right;
+    padding: 0 50px 20px 0;
+}
