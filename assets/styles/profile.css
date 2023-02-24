@@ -48,13 +48,20 @@ ul,li{
     z-index: 85;
     font-size: 18px;
   }
+.profile_link{
+  display: flex;
+  justify-content: right;
+  position: relative;
+  z-index: 100;
+}
+.profile_button{
+  background-color: #daecfd;
+  border: solid 1px blue;
+}
 .profile_hero{
-    color: black;
-    font-size: 16px;
-    display: flex;
-    justify-content: right;
-    position: relative;
-    z-index: 100;
+  color: #606060;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .p-quiz-container {
@@ -297,5 +304,7 @@ ul,li{
 
 /* レスポンシブ対応 */
 @media screen and (max-width:768px){
-
+  .profile_hero{
+    font-size: 16px;
+  }
 }
