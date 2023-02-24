@@ -85,9 +85,6 @@
           <span
             class="p-quiz-box__question__title__text">${quizItem.question}</span>
         </h2>
-        <figure class="p-quiz-box__question__image">
-          <img src="../assets/img/quiz/img-quiz0${questionNumber + 1}.png" alt="">
-        </figure>
       </div>
     <!-- A 選択肢 選択肢 選択肢 -->
       <div class="p-quiz-box__answer">
