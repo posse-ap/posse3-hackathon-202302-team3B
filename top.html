@@ -13,63 +13,143 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Plus+Jakarta+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <script src="./assets/scripts/common.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" defer></script>
+  <script src="./assets/scripts/common.js" defer></script>
 </head>
+
 <body>
-  <header>
+  <header id="js-header">
     <div class="header_logo">
       <img src="./assets/img/logo.svg" alt="POSSE">
     </div>
+    <button class="header_button" id="js-headerButton"></button>
     <nav class="header_nav">
       <ul class="header_nav_list">
         <li class="header_nav_item has_child">
-          プロフィール
-          <ul class="pull_down_list">
-            <li class="pull_down_item has_child">
-              3.0
-              <ul class="pull_down_child_list">
-                <li class="pull_down_child_item"><a href="./profile/taisei.html">関根大晟</a></li>
-                <li class="pull_down_child_item"><a href="./profile/ayumi.html">藤井愛弓</a></li>
-              </ul>
-            </li>
-            <li class="pull_down_item has_child">
-              3.5
-              <ul class="pull_down_child_list">
-                <li class="pull_down_child_item"><a href="./profile/saki.html">湯浅咲希</a></li>
-                <li class="pull_down_child_item"><a href="">工藤日向</a></li>
-                <li class="pull_down_child_item"><a href="">下山美晴</a></li>
-              </ul>
-            </li>
-          </ul>
+          <a href="#">
+            プロフィール
+            <ul class="pull_down_list">
+              <li class="pull_down_item has_child">
+                <a href="#">
+                  3.0
+                  <ul class="pull_down_child_list">
+                    <li class="pull_down_child_item"><a href="./profile/taisei.html">関根大晟</a></li>
+                    <li class="pull_down_child_item"><a href="./profile/ayumi.html">藤井愛弓</a></li>
+                  </ul>
+                </a>
+              </li>
+              <li class="pull_down_item has_child">
+                <a href="#">
+                  3.5
+                  <ul class="pull_down_child_list">
+                    <li class="pull_down_child_item"><a href="./profile/saki.html">湯浅咲希</a></li>
+                    <li class="pull_down_child_item"><a href="">工藤日向</a></li>
+                    <li class="pull_down_child_item"><a href="">下山美晴</a></li>
+                  </ul>
+                </a>
+              </li>
+            </ul>
+          </a>
         </li>
         <li class="header_nav_item has_child">
-          ワークショップ
-          <ul class="pull_down_list">
-            <li class="pull_down_item">
-              <a href="./workshop/seven_habits.html">七つの習慣</a>
-            </li>
-            <li class="pull_down_item">
-              <a href="./workshop/ten_guidelines.html">10の行動指針</a>
-            </li>
-          </ul>
+          <a href="#">
+            ワークショップ
+            <ul class="pull_down_list">
+              <li class="pull_down_item">
+                <a href="./workshop/seven_habits.html">七つの習慣</a>
+              </li>
+              <li class="pull_down_item">
+                <a href="./workshop/ten_guidelines.html">10の行動指針</a>
+              </li>
+            </ul>
+          </a>
         </li>
         <li class="header_nav_item has_child">
-          招待状
-          <ul class="pull_down_list">
-            <li class="pull_down_item">
-              <a href="./invitation/play.html">遊びの招待状</a>
-            </li>
-            <li class="pull_down_item">
-              <a href="./invitation/study.html">勉強の招待状</a>
-            </li>
-          </ul>
+          <a href="#">
+            招待状
+            <ul class="pull_down_list">
+              <li class="pull_down_item">
+                <a href="./invitation/play.html">遊びの招待状</a>
+              </li>
+              <li class="pull_down_item">
+                <a href="./invitation/study.html">勉強の招待状</a>
+              </li>
+            </ul>
+          </a>
         </li>
       </ul>
     </nav>
   </header>
 
   <main>
-
+    <section class="top_hero">
+      <div class="top_hero_container">
+        <h1 class="hero_title">
+          <span class="hero_title_label">人とつながるきっかけに作りに！</span>
+          <span class="hero_title_inline">POSSEの輪</span>
+        </h1>
+      </div>
+    </section>
+    <div class="top_container">
+      <!-- コンテンツごとにページ遷移 -->
+      <section class="top_profile top_content">
+        <div class="content_title_container">
+          <h2 class="content_title">
+            <span class="content_title_catch">みんなのプロフィール</span>
+            <span class="content_title_detail">メンバーの基本情報を知ろう！<br>クイズに何問答えられますか？</span>
+          </h2>
+        </div>
+        <ul class="content_link_list">
+          <li class="content_link_item has_child">
+            3.0
+            <ul class="content_link_child_list">
+              <li class="content_link_child_item"><a href="./profile/taisei.html">関根大晟</a></li>
+              <li class="content_link_child_item"><a href="./profile/ayumi.html">藤井愛弓</a></li>
+            </ul>
+          </li>
+          <li class="content_link_item has_child">
+            3.5
+            <ul class="content_link_child_list">
+              <li class="content_link_child_item"><a href="./profile/saki.html">湯浅咲希</a></li>
+              <li class="content_link_child_item"><a href="">工藤日向</a></li>
+              <li class="content_link_child_item"><a href="">下山美晴</a></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <section class="top_workshop top_content">
+        <div class="content_title_container">
+          <h2 class="content_title">
+            <span class="content_title_catch">過去のワークショップ</span>
+            <span class="content_title_detail">みんなはどんな考え方を持っているのかな？<br>気になる人にコメントしてみるのもgood!</span>
+          </h2>
+        </div>
+        <ul class="content_link_list">
+          <li class="content_link_item has_child">
+            <a href="./workshop/seven_habits.html">7つの習慣</a>
+          </li>
+          <li class="content_link_item has_child">
+            <a href="./workshop/ten_guidelines.html">10の行動指針</a>
+          </li>
+        </ul>
+      </section>
+      <section class="top_invitation top_content">
+        <div class="content_title_container">
+          <h2 class="content_title">
+            <span class="content_title_catch">みんなからの招待状</span>
+            <span class="content_title_detail">同じ目標、やりたいことがある人がいるかも！<br>仲間を見つけよう！</span>
+          </h2>
+        </div>
+        <ul class="content_link_list">
+          <li class="content_link_item has_child">
+            <a href="./workshop/seven_habits.html">遊びの招待状</a>
+          </li>
+          <li class="content_link_item has_child">
+            <a href="./workshop/ten_guidelines.html">勉強の招待状</a>
+          </li>
+        </ul>
+      </section>
+    </div>
   </main>
 
   <footer>
