@@ -1,25 +1,63 @@
 ul,li{
     list-style: none;
 }
-.hero{
-    background-image: url(../img/profile_hero.jpg);
-    background-position: center;
+
+.invitation_hero{
     background-size: cover;
-}
-.hero::after{
+    width: 100%;
+    height: 320px;
+    padding: 110px 0 76px;
+    margin: 0 auto;
+  }
+  
+  .invitation_play_hero{
+    background-image: url(../img/invitation/play_hero.jpg);
+  }
+  
+  .invitation_study_hero{
+    background-image: url(../img/profile/profile_hero.jpg);
+  }
+  
+  .invitation_hero::before{
+    background-color: rgba(252, 251, 251, 0.623);
     content: "";
-    clear: both;
-    display: block;
-}
-.hero_title{
+    background-size: cover;
+    width: 100%;
+    height: 320px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    padding: 110px 0 76px;
+    margin: 0 auto;
+    z-index: 80;
+  }
+  
+  .invitation_wrapper{
+    margin: 0 auto;
+    max-width: 1032px;
+    padding: 0 24px;
+    /* width: 100%; */
+  }
+  
+  .invitation_title{
+    position: relative;
+    padding-top: 60px;
+    z-index: 85;
+    font-size: 60px;
+  }
+  
+  .invitation_detail{
+    position: relative;
+    z-index: 85;
+    font-size: 18px;
+  }
+.profile_hero{
     color: black;
-    font-size: 80px;
-    padding: 100px 0 0 150px;
-}
-.hero_profile{
-    color: black;
-    float: right;
-    padding: 0 50px 20px 0;
+    font-size: 16px;
+    display: flex;
+    justify-content: right;
+    position: relative;
+    z-index: 100;
 }
 
 .p-quiz-container {
@@ -93,20 +131,6 @@ ul,li{
   .p-quiz-box__answer__button.is-selected .u-icon__arrow {
     display: none;
   }
-  /*.p-quiz-box__note {
-    align-items: center;
-    background-color: #f6f6f6;
-    border-radius: 8px;
-    display: block;
-    display: flex;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: bold;
-    gap: 16px;
-    line-height: 1.8;
-    margin-top: 16px;
-    padding: 24px;
-  }*/
   .p-quiz-box__answer__correct {
     background-color: #fff2f5;
     border-radius: 8px;
@@ -147,26 +171,6 @@ ul,li{
     font-size: 24px;
   }
   
-  /*/.u-icon__link:before {
-    content: "\e901";
-  }
-  .u-icon__note:before {
-    content: "\e902";
-  }
-  .u-icon__arrow:before {
-    content: "\e903";
-  }
-  .u-icon__line:before {
-    background: radial-gradient(#fff 60%, transparent 60%);
-    color: #00c300;
-    content: "\e900";
-  }
-  .u-icon__instagram:before {
-    content: "\ea92";
-  }
-  .u-icon__twitter:before {
-    content: "\ea96";
-  }*/
   .p-quiz-container {
     margin-top: 120px;
   }
@@ -203,6 +207,60 @@ ul,li{
   .p-quiz-box__answer__button .u-icon__arrow {
     font-size: 16px;
   }
-  /*.p-quiz-box__note {
-    font-size: 18px;
-  }*/
+
+.profile{
+    box-shadow :0px 0px 3px #EEEEEE;
+    background: #EEEEEE;
+    border-radius: 10%;
+    width: 50%;
+    margin: 100px auto;
+    padding-bottom: 30px;
+}
+.profile_img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.profile_img_{
+    width: 15rem;
+    height: 15rem;
+    border-radius:50%;
+    background-position: 48% 52%;
+    background-image: url(../img/profile/profile_saki.jpg);
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+.profile_detail{
+    display: flex;
+    justify-content: center;
+    line-height: 2.5;
+    font-size: 16px;
+}
+.profile_sns{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    gap: 50px;
+}
+.profiler_sns_item{
+    display: flex;
+}
+.twitter , .instagram{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+    text-align: center;
+}
+.twitter img{
+    width: 80px;
+}
+.instagram img{
+    width: 80px;
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width:768px){
+
+}
