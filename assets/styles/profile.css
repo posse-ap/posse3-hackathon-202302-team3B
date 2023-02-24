@@ -120,6 +120,10 @@ ul,li{
     padding: 16px;
     text-align: left;
     width: 100%;
+    cursor: pointer;
+  }
+  .p-quiz-box__answer__button:disabled{
+    cursor: auto;
   }
   .p-quiz-box__answer__button .u-icon__arrow {
     font-size: 12px;
