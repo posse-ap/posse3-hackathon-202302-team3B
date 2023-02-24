@@ -22,12 +22,12 @@
     {
       question: '出身地はどこでしょう？',
       answers: ['神奈川県横浜市', '埼玉県和光市', '東京都八王子市'],
-      correctNumber: 0,
+      correctNumber: 1,
     },
     {
       question: '趣味はなんでしょう？',
       answers: ['推し活', '飼っているデグー(ネズミの親戚の動物)のまろんくんと戯れること', 'Youtubeのネタ動画見ること'],
-      correctNumber: 1,
+      correctNumber: 0,
     },
     {
       question: '最近ハマっていることはなんでしょう？',
