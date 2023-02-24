@@ -217,6 +217,23 @@ nav ul li.has_child.active::before{
     left:40px;  
   }
 }
+.nav_top_page{
+  display: none;
+}
+.home_button{
+  margin-left: auto;
+}
+.home_button img{
+  width: 25px;
+}
+@media screen and (max-width: 768px){
+  .nav_top_page{
+    display: block;
+  }
+  .home_button{
+    display: none;
+  }
+}
 
 main{
   border-bottom: 1px solid #000;
