@@ -7,11 +7,11 @@
 }
 
 .invitation_play_hero{
-  background-image: url(../img/play_hero.jpg);
+  background-image: url(../img/invitation/play_hero.jpg);
 }
 
 .invitation_study_hero{
-  background-image: url(../img/study_hero.jpg);
+  background-image: url(../img/invitation/study_hero.jpg);
 }
 
 .invitation_hero::before{
@@ -32,7 +32,7 @@
   margin: 0 auto;
   max-width: 1032px;
   padding: 0 24px;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .invitation_title{
@@ -71,8 +71,92 @@
   border: 2px solid rgb(17, 135, 203);
 }
 
+.card_inner_nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  max-width: 500px;
+  /* ↑大事 */
+}
+
+.button_wrapper{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 .card_name{
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;
 }
+
+.card_add_reaction{
+  height: 45px;
+  width: 150px;
+  background-color: rgb(17, 135, 203);
+  color: white;
+  display: flex;
+  /* flex-direction: row-reverse; */
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+button{
+  border: none;
+}
+
+.modal_window{
+  display: none;
+  /* ここを変えるんだよ */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: #FFFFFF;
+  z-index: 100;
+  padding: 2rem;
+
+  border-radius: 40px;
+  width: 70%;
+  max-width: 700px;
+  height: 30%;
+}
+
+.modal_input{
+  width: 100%;
+}
+
+.modal_menu{
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  width: 100%;
+}
+
+.modal_cancel{
+  background-color: rgb(229, 228, 228);
+  width: 40%;
+  border-radius: 40px;
+}
+
+.modal_done{
+  background-color:rgb(17, 135, 203);
+  color: white;
+  width: 40%;
+  border-radius: 40px;
+}
+
+.over_lay{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+}
+

@@ -11,6 +11,8 @@
   rel="stylesheet">
   <link rel="stylesheet" href="../assets/styles/normalize.css">
   <link rel="stylesheet" href="../assets/styles/invitation.css">
+  <script src="../assets/scripts/invitation/jquery-3.6.1.min.js" defer></script>
+  <script src="../assets/scripts/invitation/invitation.js" defer></script>
   <title>勉強の招待状</title>
 </head>
 <body>
@@ -27,16 +29,55 @@
       <div class="cards_wrapper">
         <div class="card">
           <div class="card_inner">
-            <div class="card_name">簿記の勉強しよう！by生川美羽</div>
-            <div class="participants">生川美羽</div>
+            <div class="card_name">簿記勉強しよう!</div>
+            <div class="participants">湯浅咲希</div>
           </div>
-          <div>
-            <div>テスト用です</div>
-            <div>テスト用です</div>
+          <div class="card_inner card_inner_nav">
+            <div class="button_wrapper">
+
+              <button class="card_add_reaction modal_open">
+                <div>
+                  コメントする
+                </div>
+              </button>
+            </div>
+            <div class="added_contents">
+              <div class="added_names" id="added_names">
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
+
+    <section class="modal_window">
+      <div>
+        <p>氏名</p>
+      </div>
+      <div>
+        <input type="text" class="modal_input_name modal_input" id="modal_input_name"></input>
+      </div>
+      <div>
+        <p>コメント</p>
+      </div>
+      <div>
+        <input type="text" class="modal_input_comment modal_input" id="modal_input_comment" placeholder="招待者にコメントしよう！"></input>
+      </div>
+      <div class="modal_menu">
+        <button class="modal_cancel">
+          <div>
+            <p>閉じる</p>
+          </div>
+        </button>
+        <button class="modal_done">
+          <div>
+            <p>完了</p>
+          </div>
+        </button>
+      </div>
+    </section>
+    <div id="over_lay" class="over_lay">
+    </div>
   </main>
 </body>
 </html>
