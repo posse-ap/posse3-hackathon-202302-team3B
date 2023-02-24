@@ -221,16 +221,36 @@ ul,li{
     display: flex;
     justify-content: center;
 }
-.profile_img_{
+.profile_img_saki{
     width: 15rem;
     height: 15rem;
     border-radius:50%;
     background-position: 48% 52%;
     background-image: url(../img/profile/profile_saki.jpg);
+    background-size: 300%;
     margin-top: 50px;
     margin-bottom: 50px;
-  }
-
+}
+.profile_img_ayumi{
+    width: 15rem;
+    height: 15rem;
+    border-radius:50%;
+    background-position: 50% 40%;
+    background-image: url(../img/profile/profile_ayumi2.jpg);
+    background-size: 130%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.profile_img_taisei{
+    width: 15rem;
+    height: 15rem;
+    border-radius:50%;
+    background-position: 50% 40%;
+    background-image: url(../img/profile/profile_taisei.jpg);
+    background-size: 300%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 .profile_detail{
     display: flex;
     justify-content: center;

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+    <!-- スタイルシート読み込み -->
+    <link rel="stylesheet" href="../assets/styles/normalize.css">
+    <link rel="stylesheet" href="../assets/styles/profile.css">
+    <!--Google Fonts読み込み-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Plus+Jakarta+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- js読み込み -->
+    <script src="../assets/scripts/common.js" defer></script>
+    <script src="../assets/scripts/profile/profile_taisei.js" defer></script>
+</head>
+<body>
+    
+    <main>
+        <section class="invitation_hero invitation_study_hero">
+            <div class="invitation_wrapper">
+              <div class="invitation_paragraph">
+                <h2 class="invitation_title">たいせいのページ</h2>
+                <p class="invitation_detail">クイズを通してみんなのことを知ろう！<br>右下のプロフィールボタンからみんなのプロフィールに飛べるよ^ ^</p>
+              </div>
+              <div>
+                <a href="#profile" class="profile_hero">プロフィール▽</a>
+              </div>
+            </div>
+          </section>
+        <section class="quiz">
+            <div class="p-quiz-container l-container" id="js-quizContainer"></div>
+        </section>
+        <section class="profile" id="profile">
+            <div class="profile_img">
+                <div class="profile_img_taisei"></div>
+            </div>
+            <div class="profile_detail">
+                <ul>
+                    <li>名前：関根大晟</li>
+                    <li>生年月日：2002年12月6日</li>
+                    <li>出身地：埼玉県和光市</li>
+                    <li>在籍：慶応義塾大学商学部1年</li>
+                    <li>趣味：YouTubeのネタ動画見ること</li>
+                    <li>最近ハマっていること：MARVEL見ること</li>
+                    <li>将来の夢：</li>
+                </ul>
+            </div>
+            <ul class="profile_sns">
+                <li class="profile_sns_item">
+                    <div class="instagram">
+                        <a href="http://www.instagram.com/tai_cheeen" target="_blank">
+                        <img src="../assets/img/instagram.png" alt="Instagram">
+                        </a>
+                    </div>
+                </li>
+                <li class="profile_sns_item">
+                    <div class="twitter">
+                        <a href="http://twitter.com/taicheeen" target="_blank">
+                        <img src="../assets/img/twitter.png" alt="twitter" >
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
