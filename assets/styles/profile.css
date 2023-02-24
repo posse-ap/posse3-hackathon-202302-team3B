@@ -1,3 +1,6 @@
+ul,li{
+    list-style: none;
+}
 .hero{
     background-image: url(../img/profile_hero.jpg);
     background-position: center;
@@ -20,3 +23,191 @@
     float: right;
     padding: 0 50px 20px 0;
 }
+
+.p-quiz-container {
+    margin-top: 48px;
+  }
+.p-quiz-box{
+    padding: 50px 20px 0 20px;
+}
+  .p-quiz-box:not(:first-of-type) {
+    margin-top: 80px;
+  }
+  .p-quiz-box__label {
+    background-color: #0071bc;
+    border-radius: 8px;
+    color: #fff;
+    display: inline-block;
+    font-family: "Plus Jakarta Sans", "Noto Sans JP", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+    padding: 8px 16px;
+  }
+  .p-quiz-box__label--accent {
+    background-color: #e34e70;
+  }
+  .p-quiz-box__question{
+    width: 100%;
+    max-width: 1032px;
+    margin: 0 auto;
+  }
+  .p-quiz-box__question__title__text {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.8;
+    margin-top: 16px;
+  }
+  .p-quiz-box__question__image {
+    margin: 24px auto 0;
+    max-width: 718px;
+  }
+  .p-quiz-box__answer {
+    margin-top: 32px;
+    width: 100%;
+    max-width: 1032px;
+    margin: 0 auto;
+  }
+  .p-quiz-box__answer__list {
+    display: -ms-grid;
+    display: grid;
+    gap: 8px;
+    margin-top: 16px;
+  }
+  .p-quiz-box__answer__button {
+    align-items: center;
+    border: solid 4px #eee;
+    border-radius: 8px;
+    display: flex;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.8;
+    padding: 16px;
+    text-align: left;
+    width: 100%;
+  }
+  .p-quiz-box__answer__button .u-icon__arrow {
+    font-size: 12px;
+    margin-left: auto;
+  }
+  .p-quiz-box__answer__button:disabled .u-icon__arrow {
+    display: none;
+  }
+  .p-quiz-box__answer__button.is-selected {
+    background-color: #eff2f5;
+    border-color: #0071bc;
+  }
+  .p-quiz-box__answer__button.is-selected .u-icon__arrow {
+    display: none;
+  }
+  /*.p-quiz-box__note {
+    align-items: center;
+    background-color: #f6f6f6;
+    border-radius: 8px;
+    display: block;
+    display: flex;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+    gap: 16px;
+    line-height: 1.8;
+    margin-top: 16px;
+    padding: 24px;
+  }*/
+  .p-quiz-box__answer__correct {
+    background-color: #fff2f5;
+    border-radius: 8px;
+    display: none;
+    margin-top: 16px;
+    padding: 24px 40px;
+  }
+  .p-quiz-box__answer__correct.is-correct {
+    display: block;
+  }
+  .p-quiz-box__answer__correct.is-incorrect {
+    background-color: #eff2f5;
+    display: block;
+  }
+  .p-quiz-box__answer__correct__title {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    line-height: 1.5;
+  }
+  .is-correct .p-quiz-box__answer__correct__title {
+    color: #e34e70;
+  }
+  .is-incorrect .p-quiz-box__answer__correct__title {
+    color: #0071bc;
+  }
+  .p-quiz-box__answer__correct__content {
+    align-items: baseline;
+    display: flex;
+    font-size: 18px;
+    font-weight: bold;
+    gap: 18px;
+    line-height: 1.8;
+    margin-top: 16px;
+  }
+  .p-quiz-box__answer__correct__content__label {
+    font-family: "Plus Jakarta Sans", "Noto Sans JP", sans-serif;
+    font-size: 24px;
+  }
+  
+  /*/.u-icon__link:before {
+    content: "\e901";
+  }
+  .u-icon__note:before {
+    content: "\e902";
+  }
+  .u-icon__arrow:before {
+    content: "\e903";
+  }
+  .u-icon__line:before {
+    background: radial-gradient(#fff 60%, transparent 60%);
+    color: #00c300;
+    content: "\e900";
+  }
+  .u-icon__instagram:before {
+    content: "\ea92";
+  }
+  .u-icon__twitter:before {
+    content: "\ea96";
+  }*/
+  .p-quiz-container {
+    margin-top: 120px;
+  }
+  .p-quiz-box:not(:first-of-type) {
+    margin-top: 120px;
+  }
+  .p-quiz-box__label {
+    font-size: 36px;
+  }
+  .p-quiz-box__question__title__text {
+    font-size: 36px;
+    line-height: 1.5;
+    margin-top: 24px;
+  }
+  .p-quiz-box__question__image {
+    margin-top: 64px;
+  }
+  .p-quiz-box__answer {
+    margin-top: 64px;
+  }
+  .p-quiz-box__answer__list {
+    -ms-grid-columns: (1fr)[3];
+    gap: 24px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .p-quiz-box__answer__button {
+    border-width: 5px;
+    font-size: 18px;
+    padding: 19px;
+  }
+  .p-quiz-box__answer__button .u-icon__arrow {
+    font-size: 16px;
+  }
+  /*.p-quiz-box__note {
+    font-size: 18px;
+  }*/
