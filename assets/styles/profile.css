@@ -251,6 +251,26 @@ ul,li{
     margin-top: 50px;
     margin-bottom: 50px;
 }
+.profile_img_miharu{
+  width: 15rem;
+  height: 15rem;
+  border-radius:50%;
+  background-position: 50% 45%;
+  background-image: url(../img/profile/profile_miharu.jpg);
+  background-size: 160%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.profile_img_hinata{
+  width: 15rem;
+  height: 15rem;
+  border-radius:50%;
+  background-position: 100% 37%;
+  background-image: url(../img/profile/profile_hinata.jpg);
+  background-size: 350%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
 .profile_detail{
     display: flex;
     justify-content: center;
