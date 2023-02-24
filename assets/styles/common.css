@@ -220,7 +220,19 @@ nav ul li.has_child.active::before{
   }
   header nav ul li.has_child::before{
     top: 8px;
-    left:40px;  
+    left:40px;
+  }
+  .header_nav_item{
+    font-size: 30px;
+  }
+  .pull_down_item a{
+    font-size: 25px;
+  }
+  nav li.has_child ul li a{
+    font-size: 25px;
+  }
+  nav li.has_child ul li a:hover, nav li.has_child ul li a:active{
+    font-size: 28px;
   }
 }
 .nav_top_page{
