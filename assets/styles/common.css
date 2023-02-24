@@ -1,3 +1,8 @@
+/* body */
+body {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
 a{
   color: #999;
 }
@@ -17,7 +22,6 @@ header{
   z-index: 1000;
   border-bottom: solid 3px rgb(50, 98, 255);
 }
-
 .header_button{
   display: none;
 }
@@ -31,7 +35,7 @@ nav ul{
   display: flex;
   justify-content: center;
   gap: 40px;
-  margin-top: 5px;
+  margin: 5px 0;
 }
 nav ul ul{
   display: block;
@@ -41,20 +45,12 @@ nav ul ul{
 nav ul li{
   position: relative;
 }
-
-/*ナビゲーションのリンク設定*/
-/* nav ul li li a{
-  padding:10px 35px;
-} */
-
-nav ul li a:hover{
+header nav ul li a:hover{
   color:#8eb4f2; 
 }
-
-/*==矢印の設定*/
-
+/*矢印の設定*/
 /*2階層目を持つliの矢印の設定*/
-nav ul li.has_child::before{
+header nav ul li.has_child::before{
   content:'';
   position: absolute;
   left:-14px;
@@ -62,51 +58,46 @@ nav ul li.has_child::before{
   width:6px;
   height:6px;
   border-top: 2px solid #999;
-    border-right:2px solid #999;
-    transform: rotate(135deg);
+  border-right:2px solid #999;
+  transform: rotate(135deg);
 }
-
 /*3階層目を持つliの矢印の設定*/
-nav ul ul li.has_child::before{
+header nav ul ul li.has_child::before{
   content:'';
   position: absolute;
   left:6px;
   top:5px;
   width:6px;
   height:6px;
-    border-top: 2px solid #fff;
-    border-right:2px solid #fff;
-    transform: rotate(45deg);
+  border-top: 2px solid #fff;
+  border-right:2px solid #fff;
+  transform: rotate(45deg);
 }
-
-/*== 2・3階層目の共通設定 */
-
+/* 2・3階層目の共通設定 */
 /*下の階層を持っているulの指定*/
-nav li.has_child ul{
-    /*絶対配置で位置を指定*/
+header nav li.has_child ul{
+  /*絶対配置で位置を指定*/
   position: absolute;
   left:0;
-  top:48px;
+  top:40px;
   z-index: 4;
-    /*形状を指定*/
+  /*形状を指定*/
   background:#919191;
   width:150px;
-    /*はじめは非表示*/
+  /*はじめは非表示*/
   visibility: hidden;
   opacity: 0;
-    /*アニメーション設定*/
+  /*アニメーション設定*/
   transition: all .3s;
   padding-top: 2px;
-    padding-bottom: 2px;
+  padding-bottom: 2px;
 }
-
 ul.pull_down_list {
   padding-left: 0;
 }
 li.pull_down_item{
   color: #fff;
 }
-
 /*hoverしたら表示*/
 nav li.has_child:hover > ul,
 nav li.has_child ul li:hover > ul,
@@ -115,50 +106,39 @@ nav li.has_child ul li:active > ul{
   visibility: visible;
   opacity: 1;
 }
-
 /*ナビゲーションaタグの形状*/
 nav li.has_child ul li a{
   color: #fff;
   font-size: 15px;
 }
-
 nav li.has_child ul li a:hover,
 nav li.has_child ul li a:active{
   font-size: 18px;
 }
-
-
-/*==3階層目*/
-
+/*3階層目*/
 /*3階層目の位置*/
-nav li.has_child ul ul{
-  top:0;
+header nav li.has_child ul ul{
+  top:-7px;
   left:150px;
   background:#a0a0a0;
 }
-
 ul.pull_down_child_list{
   padding-left: 0;
 }
-
 nav li.has_child ul ul li a:hover,
 nav li.has_child ul ul li a:active{
   font-size: 18px;
 }
-
 /*矢印の位置と向き*/
 nav ul ul li.has_child::before{
   transform: rotate(135deg);
   left:20px;
 }
-    
 nav ul li.has_child.active::before{
   transform: rotate(-45deg);
 }
 
-
-/*==768px以下の形状*/
-
+/*768px以下の形状*/
 @media screen and (max-width:768px){
   .header_button{
     display: block;
@@ -196,12 +176,10 @@ nav ul li.has_child.active::before{
     top: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
   }
-
-  nav{
+  header nav{
     padding: 0;
     display: none;
   }
-  
   header.is-open nav{
     display: block;
     position: absolute;
@@ -216,13 +194,11 @@ nav ul li.has_child.active::before{
     text-align: center;
     z-index: 99;
   }
-
-  nav ul{
+  header nav ul{
     display: block;
   }
-  
-  nav li.has_child ul,
-  nav li.has_child ul ul{
+  header nav li.has_child ul,
+  header nav li.has_child ul ul{
     position: relative;
     left:0;
     top:0;
@@ -232,16 +208,120 @@ nav ul li.has_child.active::before{
     display: none;/*JSのslidetoggleで表示させるため非表示に*/
     transition:none;/*JSで制御するためCSSのアニメーションを切る*/
   }
-
-  nav ul li.has_child::before{
+  header nav ul li.has_child::before{
     top: 8px;
     left:40px;  
   }
 }
 
-/* body */
-body {
-  font-family: "Noto Sans JP", sans-serif;
+main{
+  border-bottom: 1px solid #000;
+  padding-top: 100px;
+}
+
+/* 固定バナー */
+.go_top{
+  position: fixed;
+  bottom: 50px;
+  right: 0;
+}
+.go_top_button{
+  background-color: #cbdbf6cd;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+.go_top_button a{
+  color: #555;
+  font-size: 15px;
+}
+.go_top_button a:hover{
+  font-size: 20px;
 }
 
 /* footer */
+footer{
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #919191;
+}
+.footer_logo img{
+  height: 20px;
+}
+footer a{
+  color: #fff;
+}
+footer nav li.has_child ul{
+  /*絶対配置で位置を指定*/
+  position: absolute;
+  left:0;
+  top:-60px;
+  z-index: 4;
+  /*形状を指定*/
+  background:#919191;
+  width:150px;
+  /*はじめは非表示*/
+  visibility: hidden;
+  opacity: 0;
+  /*アニメーション設定*/
+  transition: all .3s;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+footer nav li.has_child ul ul{
+  top:-26px;
+  left:150px;
+  background:#a0a0a0;
+}
+footer nav ul li a:hover{
+  color:#d8e7ff; 
+}
+/*==矢印の設定*/
+/*2階層目を持つliの矢印の設定*/
+footer nav ul li.has_child::before{
+  content:'';
+  position: absolute;
+  left:-14px;
+  top:7px;
+  width:6px;
+  height:6px;
+  border-bottom: 2px solid #ffffff;
+  border-left:2px solid #ffffff;
+  transform: rotate(135deg);
+}
+/*3階層目を持つliの矢印の設定*/
+footer nav ul ul li.has_child::before{
+  content:'';
+  position: absolute;
+  left:6px;
+  top:5px;
+  width:6px;
+  height:6px;
+  border-bottom: 2px solid #fff;
+  border-left:2px solid #fff;
+  transform: rotate(-135deg);
+}
+.footer_sns{
+  margin-left: auto;
+  margin-right: 50px;
+}
+.footer_sns ul{
+  display: flex;
+  gap: 15px;
+  margin: 0;
+}
+.footer_sns img{
+  width: 25px;
+}
+
+@media screen and (max-width: 768px){
+  .footer_nav{
+    display: none;
+  }
+  footer nav li, footer nav a{
+    font-size: 13px;
+  }
+}
