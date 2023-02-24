@@ -1,3 +1,6 @@
+main{
+  padding-top: 0;
+}
 ul,li{
     list-style: none;
 }
@@ -188,7 +191,6 @@ ul,li{
     margin: 0 auto;
   }
   .p-quiz-box__answer__list {
-    -ms-grid-columns: (1fr)[3];
     gap: 24px;
     grid-template-columns: repeat(3, 1fr);
   }
@@ -206,7 +208,7 @@ ul,li{
     background: #EEEEEE;
     border-radius: 50px;
     width: 50%;
-    margin: 100px auto;
+    margin: 100px auto 50px;
     padding-bottom: 30px;
 }
 .profile_img{

@@ -4,22 +4,87 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>profile</title>
+    <title>profile_miharu</title>
     <!-- スタイルシート読み込み -->
     <link rel="stylesheet" href="../assets/styles/normalize.css">
+    <link rel="stylesheet" href="../assets/styles/common.css">
     <link rel="stylesheet" href="../assets/styles/profile.css">
     <!--Google Fonts読み込み-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Plus+Jakarta+Sans:wght@400;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Plus+Jakarta+Sans:wght@400;700&display=swap" rel="stylesheet">
     <!-- js読み込み -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" defer></script>
     <script src="../assets/scripts/common.js" defer></script>
     <script src="../assets/scripts/profile/profile_miharu.js" defer></script>
 </head>
 <body>
-    <main>
+    <header id="js-header">
+        <div class="header_logo">
+            <img src="../assets/img/logo.svg" alt="POSSE">
+        </div>
+        <button class="header_button" id="js-headerButton"></button>
+        <nav class="header_nav">
+            <ul class="header_nav_list">
+                <li class="header_nav_item">
+                    <a href="../top.html">トップページへ</a>
+                </li>
+                <li class="header_nav_item has_child">
+                    <a href="#">
+                        プロフィール
+                        <ul class="pull_down_list">
+                            <li class="pull_down_item has_child">
+                                <a href="#">
+                                    3.0
+                                    <ul class="pull_down_child_list">
+                                        <li class="pull_down_child_item"><a href="../profile/taisei.html">関根大晟</a></li>
+                                        <li class="pull_down_child_item"><a href="../profile/ayumi.html">藤井愛弓</a></li>
+                                    </ul>
+                                </a>
+                            </li>
+                            <li class="pull_down_item has_child">
+                                <a href="#">
+                                    3.5
+                                    <ul class="pull_down_child_list">
+                                        <li class="pull_down_child_item"><a href="../profile/saki.html">湯浅咲希</a></li>
+                                        <li class="pull_down_child_item"><a href="../profile/hinata.html">工藤日向</a></li>
+                                        <li class="pull_down_child_item"><a href="../profile/miharu.html">下山美晴</a></li>
+                                    </ul>
+                                </a>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="header_nav_item has_child">
+                    <a href="#">
+                        ワークショップ
+                        <ul class="pull_down_list">
+                            <li class="pull_down_item">
+                                <a href="../workshop/seven_habits.html">七つの習慣</a>
+                            </li>
+                            <li class="pull_down_item">
+                                <a href="../workshop/ten_guidelines.html">10の行動指針</a>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="header_nav_item has_child">
+                    <a href="#">
+                        招待状
+                        <ul class="pull_down_list">
+                            <li class="pull_down_item">
+                                <a href="../invitation/play.html">遊びの招待状</a>
+                            </li>
+                            <li class="pull_down_item">
+                                <a href="../invitation/study.html">勉強の招待状</a>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main id="page-top">
         <section class="invitation_hero invitation_study_hero">
             <div class="invitation_wrapper">
                 <div class="invitation_paragraph">
@@ -67,8 +132,84 @@
             </ul>
         </section>
     </main>
+    <div class="go_top">
+        <button class="go_top_button">
+            <a href="#page-top">Topへ</a>
+        </button>
+    </div>
     <footer>
-
+        <div class="footer_logo">
+            <img src="../assets/img/logo.svg" alt="POSSE">
+        </div>
+        <nav class="footer_nav">
+            <ul class="footer_nav_list">
+                <li class="footer_nav_item has_child">
+                    <a href="">
+                        プロフィール
+                        <ul class="pull_down_list">
+                            <li class="pull_down_item has_child">
+                                <a href="">
+                                    3.0
+                                    <ul class="pull_down_child_list">
+                                        <li class="pull_down_child_item"><a href="../profile/taisei.html">関根大晟</a></li>
+                                        <li class="pull_down_child_item"><a href="../profile/ayumi.html">藤井愛弓</a></li>
+                                    </ul>
+                                </a>
+                            </li>
+                            <li class="pull_down_item has_child">
+                                <a href="">
+                                    3.5
+                                    <ul class="pull_down_child_list">
+                                        <li class="pull_down_child_item"><a href="../profile/saki.html">湯浅咲希</a></li>
+                                        <li class="pull_down_child_item"><a href="../profile/hinata.html">工藤日向</a></li>
+                                        <li class="pull_down_child_item"><a href="../profile/miharu.html">下山美晴</a></li>
+                                    </ul>
+                                </a>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="footer_nav_item has_child">
+                    <a href="">
+                        ワークショップ
+                        <ul class="pull_down_list">
+                            <li class="pull_down_item">
+                                <a href="../workshop/seven_habits.html">七つの習慣</a>
+                            </li>
+                            <li class="pull_down_item">
+                                <a href="../workshop/ten_guidelines.html">10の行動指針</a>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="footer_nav_item has_child">
+                    <a href="">
+                        招待状
+                        <ul class="pull_down_list">
+                            <li class="pull_down_item">
+                                <a href="../invitation/play.html">遊びの招待状</a>
+                            </li>
+                            <li class="pull_down_item">
+                                <a href="../invitation/study.html">勉強の招待状</a>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="footer_sns">
+            <ul class="footer_sns_list">
+                <li class="footer_sns_item">
+                    <a href="https://www.instagram.com/posse_programming/"><img src="../assets/img/instagram.png" alt="instagram"></a>
+                </li>
+                <li class="footer_sns_item">
+                    <a href="https://twitter.com/posse_program"><img src="../assets/img/twitter.png" alt="twitter"></a>
+                </li>
+                <li class="footer_sns_item">
+                    <a href="https://discord.gg/hmP6rxxZKX"><img src="../assets/img/discord.png" alt="discord"></a>
+                </li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>
