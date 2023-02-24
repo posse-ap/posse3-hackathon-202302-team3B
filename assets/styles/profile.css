@@ -9,15 +9,12 @@ ul,li{
     padding: 110px 0 76px;
     margin: 0 auto;
   }
-  
   .invitation_play_hero{
     background-image: url(../img/invitation/play_hero.jpg);
   }
-  
   .invitation_study_hero{
     background-image: url(../img/profile/profile_hero.jpg);
   }
-  
   .invitation_hero::before{
     background-color: rgba(252, 251, 251, 0.623);
     content: "";
@@ -31,21 +28,18 @@ ul,li{
     margin: 0 auto;
     z-index: 80;
   }
-  
   .invitation_wrapper{
     margin: 0 auto;
     max-width: 1032px;
     padding: 0 24px;
     /* width: 100%; */
   }
-  
   .invitation_title{
     position: relative;
     padding-top: 60px;
     z-index: 85;
     font-size: 60px;
   }
-  
   .invitation_detail{
     position: relative;
     z-index: 85;
@@ -170,7 +164,6 @@ ul,li{
     font-family: "Plus Jakarta Sans", "Noto Sans JP", sans-serif;
     font-size: 24px;
   }
-  
   .p-quiz-container {
     margin-top: 120px;
   }
@@ -211,7 +204,7 @@ ul,li{
 .profile{
     box-shadow :0px 0px 3px #EEEEEE;
     background: #EEEEEE;
-    border-radius: 10%;
+    border-radius: 50px;
     width: 50%;
     margin: 100px auto;
     padding-bottom: 30px;
