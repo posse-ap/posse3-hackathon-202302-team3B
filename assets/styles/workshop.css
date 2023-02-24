@@ -81,6 +81,8 @@ main{
 .child_list{
 	display: none;
 	text-align: center;
+  border: solid 3px rgb(118, 189, 244);
+  padding: 5px 0;
 }
 @media screen and (max-width: 768px) {
 	.ten_guidelines .content_detail{
