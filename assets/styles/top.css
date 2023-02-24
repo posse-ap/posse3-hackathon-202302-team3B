@@ -7,6 +7,21 @@ ul, li{
   background: url(../img/human_circle.jpg) center top / cover;
   padding: 100px 20px 0px;
   text-align: center;
+  height: 320px;
+}
+
+.top_hero::before{
+  background-color: rgba(252, 251, 251, 0.623);
+  content: "";
+  background-size: cover;
+  width: 100%;
+  height: 320px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  padding: 150px 0 76px;
+  margin: 0 auto;
+  z-index: 80;
 }
 .top_hero_container{
   margin: 0 auto;
@@ -14,19 +29,33 @@ ul, li{
   padding: 0 20px;
 }
 .hero_title{
-  color: #898888;
+  color: black;
   font-weight: bold;
   margin: 0;
+  position: relative;
+  z-index: 85;
 }
 .hero_title_label{
-  font-size: 14px;
+  font-size: 25px;
   line-height: 1.8;
+  z-index: 85;
 }
 .hero_title_inline{
   display: block;
-  font-size: 28px;
+  font-size: 70px;
   line-height: 1.5;
   margin: 0;
+  z-index: 85;
+}
+
+@media (max-width: 768px){
+  .hero_title_label{
+    font-size: 15px;
+  }
+  
+  .hero_title_inline{
+    font-size: 40px;
+  }
 }
 
 /* contents */

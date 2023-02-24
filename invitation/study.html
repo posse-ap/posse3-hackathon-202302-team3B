@@ -94,7 +94,26 @@
       </div>
     </section>
     <section class="invitation_cards">
-      <div class="cards_wrapper">
+      <div class="cards_wrapper" id="cards_wrapper">
+        <div class="add_card">
+          <div class="card_inner">
+            <div class="add_card_name">招待状を追加する</div>
+            <!-- <div class="participants">湯浅咲希</div> -->
+          </div>
+          <div class="card_inner card_inner_nav">
+            <div class="button_wrapper">
+              <button class="add_card_add_reaction add_modal_open">
+                <div>
+                  追加する
+                </div>
+              </button>
+            </div>
+            <!-- <div class="added_contents">
+              <div class="added_names" id="added_names">
+              </div>
+            </div> -->
+          </div>
+        </div>
         <div class="card">
           <div class="card_inner">
             <div class="card_name">簿記勉強しよう!</div>
@@ -117,6 +136,32 @@
       </div>
     </section>
 
+    <section class="add_modal_window">
+      <div>
+        <p>氏名</p>
+      </div>
+      <div>
+        <input type="text" class="add_modal_input_name add_modal_input" id="add_modal_input_name"></input>
+      </div>
+      <div>
+        <p>コメント</p>
+      </div>
+      <div>
+        <input type="text" class="add_modal_input_comment add_modal_input" id="add_modal_input_comment" placeholder="招待状を送ろう！"></input>
+      </div>
+      <div class="add_modal_menu">
+        <button class="add_modal_cancel">
+          <div>
+            <p>閉じる</p>
+          </div>
+        </button>
+        <button class="add_modal_done">
+          <div>
+            <p>完了</p>
+          </div>
+        </button>
+      </div>
+    </section>
     <section class="modal_window">
       <div>
         <p>氏名</p>

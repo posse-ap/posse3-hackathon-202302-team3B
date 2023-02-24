@@ -34,6 +34,12 @@ header{
 nav{
   text-align: center;
 }
+
+@media (max-width: 768px) {
+  nav{
+    height: 100vh;
+  }
+}
 nav ul{
   list-style: none;
   display: flex;

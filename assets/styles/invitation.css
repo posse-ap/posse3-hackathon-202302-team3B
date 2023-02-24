@@ -75,6 +75,20 @@ main{
   border: 2px solid rgb(17, 135, 203);
 }
 
+.add_card{
+  margin: 0 auto;
+  width: 90%;
+  max-width: 800px;
+  display: flex;
+  justify-content: space-between;
+  background-color: whitesmoke;
+  height: auto;
+  padding: 20px 30px;
+  border-radius: 15px;
+  border: 2px solid rgb(208, 73, 20);
+  margin-bottom: 20px;
+}
+
 .card_inner_nav{
   display: flex;
   flex-direction: column;
@@ -88,16 +102,40 @@ main{
   flex-direction: row-reverse;
 }
 
+.card{
+  margin-bottom: 20px;
+}
+
 .card_name{
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
+.add_card_name{
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
 .card_add_reaction{
   height: 45px;
   width: 150px;
   background-color: rgb(17, 135, 203);
+  color: white;
+  display: flex;
+  /* flex-direction: row-reverse; */
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.add_card_add_reaction{
+  height: 45px;
+  width: 150px;
+  background-color: rgb(208, 73, 20);
   color: white;
   display: flex;
   /* flex-direction: row-reverse; */
@@ -128,11 +166,40 @@ button{
   height: 30%;
 }
 
+.add_modal_window{
+  display: none;
+  /* ここを変えるんだよ */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: #FFFFFF;
+  z-index: 100;
+  padding: 2rem;
+
+  border-radius: 40px;
+  width: 70%;
+  max-width: 700px;
+  height: 30%;
+}
+
 .modal_input{
   width: 100%;
 }
 
+.add_modal_input{
+  width: 100%;
+}
+
 .modal_menu{
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  width: 100%;
+}
+
+.add_modal_menu{
   margin-top: 5%;
   display: flex;
   justify-content: space-between;
@@ -146,8 +213,21 @@ button{
   border-radius: 40px;
 }
 
+.add_modal_cancel{
+  background-color: rgb(229, 228, 228);
+  width: 40%;
+  border-radius: 40px;
+}
+
 .modal_done{
   background-color:rgb(17, 135, 203);
+  color: white;
+  width: 40%;
+  border-radius: 40px;
+}
+
+.add_modal_done{
+  background-color:rgb(208, 73, 20);
   color: white;
   width: 40%;
   border-radius: 40px;
