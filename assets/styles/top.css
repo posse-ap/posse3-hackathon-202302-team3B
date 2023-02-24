@@ -1,0 +1,121 @@
+main{
+  margin-top: 100px;
+  width: 100%;
+}
+ul, li{
+  list-style: none;
+}
+
+/* hero */
+.top_hero{
+  background: url(../img/human_circle.jpg) center top / cover;
+  padding: 100px 20px 0px;
+  text-align: center;
+}
+.top_hero_container{
+  margin: 0 auto;
+  max-width: 1032px;
+  padding: 0 20px;
+}
+.hero_title{
+  color: #898888;
+  font-weight: bold;
+  margin: 0;
+}
+.hero_title_label{
+  font-size: 14px;
+  line-height: 1.8;
+}
+.hero_title_inline{
+  display: block;
+  font-size: 28px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* contents */
+.top_container{
+  max-width: 1032px;
+  padding: 60px 50px 30px;
+  border-bottom: solid 1px #eee;
+}
+.top_content{
+  padding: 30px 20px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 30px;
+}
+.top_content::after{
+  background-color: rgba(255, 255, 255, 0.607);
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.top_profile{
+  background: url(../img/top/top_profile.jpg) center center / cover;
+}
+.top_workshop{
+  background: url(../img/top/top_workshop.jpg) center top / cover;
+}
+.top_invitation{
+  background: url(../img/top/top_invitation.jpg) center top / cover;;
+}
+.content_title_container{
+  display: block;
+  position: relative;
+  z-index: 100;
+}
+.content_title_catch{
+  display: block;
+  font-size: 30px;
+  color: #3b3b3b;
+}
+.content_title_detail{
+  display: block;
+  font-size: 15px;
+  color: #616161;
+}
+h2 br{
+  display: none;
+}
+
+.content_link_list{
+  position: relative;
+  z-index: 100;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding-left: 0;
+}.content_link_item{
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(80, 80, 80);
+  padding-left: 0;
+}
+.content_link_item a{
+  font-size: 18px;
+}
+.content_link_item a:hover, .content_link_item a:active{
+  font-size: 20px;
+}
+.content_link_child_item a{
+  font-size: 15px;
+}
+.content_link_child_item a:hover, .content_link_child_item a:active{
+  font-size: 16px;
+}
+.content_link_child_list{
+  padding-left: 0;
+}
+
+@media screen and (max-width:768px){
+  .top_container{
+    padding: 60px 30px 30px;
+  }
+  h2 br{
+    display: block;
+  }
+}

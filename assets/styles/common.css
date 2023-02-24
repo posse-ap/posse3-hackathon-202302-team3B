@@ -1,3 +1,7 @@
+a{
+  color: #999;
+}
+
 /* header */
 header{
   display: flex;
@@ -13,6 +17,12 @@ header{
   z-index: 1000;
   border-bottom: solid 3px rgb(50, 98, 255);
 }
+
+.header_button{
+  display: none;
+}
+
+/* nav */
 nav{
   text-align: center;
 }
@@ -20,7 +30,7 @@ nav ul{
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 40px;
   margin-top: 5px;
 }
 nav ul ul{
@@ -47,8 +57,8 @@ nav ul li a:hover{
 nav ul li.has_child::before{
   content:'';
   position: absolute;
-  left:15px;
-  top:25px;
+  left:-14px;
+  top:7px;
   width:6px;
   height:6px;
   border-top: 2px solid #999;
@@ -136,14 +146,77 @@ nav li.has_child ul ul li a:active{
   font-size: 18px;
 }
 
+/*矢印の位置と向き*/
+nav ul ul li.has_child::before{
+  transform: rotate(135deg);
+  left:20px;
+}
+    
+nav ul li.has_child.active::before{
+  transform: rotate(-45deg);
+}
+
 
 /*==768px以下の形状*/
 
 @media screen and (max-width:768px){
+  .header_button{
+    display: block;
+    margin-left: auto;
+    height: 40px;
+    position: fixed;
+    right: 19px;
+    top: 8px;
+    width: 40px;
+    z-index: 1000;
+  }
+  .header_button::before, .header_button::after {
+    background-color: #333;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    transition: transform 0.4s, top 0.4s;
+    width: 34px;
+  }
+  .header_button::before {
+    top: 12px;
+    transform: translate(-50%, 0);
+  }
+  .header_button::after {
+    top: 27px;
+    transform: translate(-50%, 0);
+  }
+  header.is-open .header_button::before {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  header.is-open .header_button::after {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
   nav{
     padding: 0;
+    display: none;
   }
   
+  header.is-open nav{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 110px;
+    padding-top: 140px;
+    padding-bottom: 500px;
+    background-color: #fff;
+    text-align: center;
+    z-index: 99;
+  }
+
   nav ul{
     display: block;
   }
@@ -151,34 +224,19 @@ nav li.has_child ul ul li a:active{
   nav li.has_child ul,
   nav li.has_child ul ul{
     position: relative;
-  left:0;
-  top:0;
-  width:100%;
-  visibility:visible;/*JSで制御するため一旦表示*/
-  opacity:1;/*JSで制御するため一旦表示*/
-  display: none;/*JSのslidetoggleで表示させるため非表示に*/
-  transition:none;/*JSで制御するためCSSのアニメーションを切る*/
-}
-  
-nav ul li a{
-  border-bottom:1px solid #ccc;
-}
+    left:0;
+    top:0;
+    width:100%;
+    visibility:visible;/*JSで制御するため一旦表示*/
+    opacity:1;/*JSで制御するため一旦表示*/
+    display: none;/*JSのslidetoggleで表示させるため非表示に*/
+    transition:none;/*JSで制御するためCSSのアニメーションを切る*/
+  }
 
-/*矢印の位置と向き*/
-
-nav ul li.has_child::before{
-  left:20px;  
-}
-
-nav ul ul li.has_child::before{
-    transform: rotate(135deg);
-  left:20px;
-}
-    
-nav ul li.has_child.active::before{
-    transform: rotate(-45deg);
-}
-
+  nav ul li.has_child::before{
+    top: 8px;
+    left:40px;  
+  }
 }
 
 /* body */
