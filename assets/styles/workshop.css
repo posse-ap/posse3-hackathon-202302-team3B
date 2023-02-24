@@ -1,17 +1,17 @@
-.invitation_hero{
+main{
+  padding-top: 0;
+}
+.workshop_hero{
   background-size: cover;
   width: 100%;
   height: 320px;
   padding: 110px 0 76px;
   margin: 0 auto;
 }
-
-.invitation_habit_hero{
+.workshop_habit_hero{
   background-image: url(../img/workshop/ten_guidelines.png);
 }
-
-
-.invitation_hero::before{
+.workshop_hero::before{
   background-color: rgba(252, 251, 251, 0.623);
   content: "";
   background-size: cover;
@@ -25,154 +25,65 @@
   z-index: 80;
 }
 
-.invitation_wrapper{
+.workshop_wrapper{
   margin: 0 auto;
   max-width: 1032px;
   padding: 0 24px;
   /* width: 100%; */
 }
 
-.invitation_title{
+.workshop_title{
   position: relative;
   padding-top: 60px;
   z-index: 85;
   font-size: 60px;
 }
 
-.invitation_detail{
+.workshop_detail{
   position: relative;
   z-index: 85;
   font-size: 18px;
 }
 
-/*====================================================================
-.s_02 .accordion_one
-====================================================================*/
-.s_02 .accordion_one {
-	max-width: 1024px;
+.workshop_container{
 	margin: 0 auto;
+	max-width: 1032px;
 }
-.s_02 .accordion_one .accordion_header {
-	background-color: #db0f2f;
-	color: #fff;
-	font-size: 26px;
-	font-weight: bold;
-	padding: 20px 11%;
-	text-align: center;
-	position: relative;
-	z-index: +1;
-	cursor: pointer;
-	transition-duration: 0.2s;
+.workshop_container ul{
+	padding-left: 0;
 }
-.s_02 .accordion_one:nth-of-type(2) .accordion_header {
-    background-color: #ff9a05;
+.workshop_contents_item{
+	margin-bottom: 15px;
 }
-.s_02 .accordion_one:nth-of-type(3) .accordion_header {
-    background-color: #1c85d8;
-}
-.s_02 .accordion_one .accordion_header:hover {
-	opacity: .8;
-}
-.s_02 .accordion_one .accordion_header .i_box {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: absolute;
-	top: 50%;
-	right: 5%;
-	width: 40px;
-	height: 40px;
-	border: 1px solid #fff;
-	margin-top: -20px;
-	box-sizing: border-box;
-	-webkit-transform: rotate(45deg);
-	transform: rotate(45deg);
-	transform-origin: center center;
-	transition-duration: 0.2s;
-}
-.s_02 .accordion_one .accordion_header .i_box .one_i {
+.content_title{
 	display: block;
-	width: 18px;
-	height: 18px;
-	-webkit-transform: rotate(45deg);
-	transform: rotate(45deg);
-	transform-origin: center center;
-	transition-duration: 0.2s;
-	position: relative;
+	color: #fff;
+	font-size: 20px;
+	text-decoration: underline #fff;
+	padding: 5px;
+	background-color: rgb(86, 153, 241);
+	text-align: center;
+	cursor: pointer;
 }
-.s_02 .accordion_one .accordion_header.open .i_box {
-	-webkit-transform: rotate(-360deg);
-	transform: rotate(-360deg);
+.content_detail{
+	display: block;
+	background-color: rgb(118, 189, 244);
+	color: #fff;
+	line-height: 1.3;
+	padding: 5px;
 }
-.s_02 .accordion_one .accordion_header .i_box .one_i:before, .s_02 .accordion_one .accordion_header .i_box .one_i:after {
-	display: flex;
-	content: '';
-	background-color: #fff;
-	border-radius: 10px;
-	width: 18px;
-	height: 4px;
-	position: absolute;
-	top: 7px;
-	left: 0;
-	-webkit-transform: rotate(0deg);
-	transform: rotate(0deg);
-	transform-origin: center center;
+.ten_guidelines .content_detail{
+	padding-left: 30%;
 }
-.s_02 .accordion_one .accordion_header .i_box .one_i:before {
-	width: 4px;
-	height: 18px;
-	top: 0;
-	left: 7px;
+.seven_habits .content_detail{
+	text-align: center;
 }
-.s_02 .accordion_one .accordion_header.open .i_box .one_i:before {
-	content: none;
-}
-.s_02 .accordion_one .accordion_header.open .i_box .one_i:after {
-	-webkit-transform: rotate(-45deg);
-	transform: rotate(-45deg);
-}
-.s_02 .accordion_one .accordion_inner {
+.child_list{
 	display: none;
-	padding: 30px 30px;
-	border-left: 2px solid #db0f2f;
-	border-right: 2px solid #db0f2f;
-	border-bottom: 2px solid #db0f2f;
-	box-sizing: border-box;
+	text-align: center;
 }
-.s_02 .accordion_one:nth-of-type(2) .accordion_inner {
-	border-left: 2px solid #ff9a05;
-	border-right: 2px solid #ff9a05;
-	border-bottom: 2px solid #ff9a05;
-}
-.s_02 .accordion_one:nth-of-type(3) .accordion_inner {
-	border-left: 2px solid #1c85d8;
-	border-right: 2px solid #1c85d8;
-	border-bottom: 2px solid #1c85d8;
-}
-.s_02 .accordion_one .accordion_inner .box_one {
-	height: 300px;
-}
-.s_02 .accordion_one .accordion_inner p.txt_a_ac {
-	margin: 0;
-}
-@media screen and (max-width: 1024px) {
-	.s_02 .accordion_one .accordion_header {
-		font-size: 18px;
-	}
-	.s_02 .accordion_one .accordion_header .i_box {
-		width: 30px;
-		height: 30px;
-		margin-top: -15px;
+@media screen and (max-width: 768px) {
+	.ten_guidelines .content_detail{
+		padding-left: 20%;
 	}
 }
-@media screen and (max-width: 767px) {
-	.s_02 .accordion_one .accordion_header {
-		font-size: 16px;
-		text-align: left;
-		padding: 15px 60px 15px 15px;
-	}
-}
-
-/*====================================================================
-以下は不要です。
-====================================================================*/
