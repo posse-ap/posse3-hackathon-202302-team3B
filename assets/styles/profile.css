@@ -1,0 +1,310 @@
+main{
+  padding-top: 0;
+}
+ul,li{
+    list-style: none;
+}
+
+.invitation_hero{
+    background-size: cover;
+    width: 100%;
+    height: 320px;
+    padding: 110px 0 76px;
+    margin: 0 auto;
+  }
+  .invitation_play_hero{
+    background-image: url(../img/invitation/play_hero.jpg);
+  }
+  .invitation_study_hero{
+    background-image: url(../img/profile/profile_hero.jpg);
+  }
+  .invitation_hero::before{
+    background-color: rgba(252, 251, 251, 0.623);
+    content: "";
+    background-size: cover;
+    width: 100%;
+    height: 320px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    padding: 110px 0 76px;
+    margin: 0 auto;
+    z-index: 80;
+  }
+  .invitation_wrapper{
+    margin: 0 auto;
+    max-width: 1032px;
+    padding: 0 24px;
+    /* width: 100%; */
+  }
+  .invitation_title{
+    position: relative;
+    padding-top: 60px;
+    z-index: 85;
+    font-size: 60px;
+  }
+  .invitation_detail{
+    position: relative;
+    z-index: 85;
+    font-size: 18px;
+  }
+.profile_link{
+  display: flex;
+  justify-content: right;
+  position: relative;
+  z-index: 100;
+}
+.profile_button{
+  background-color: #daecfd;
+  border: solid 1px blue;
+}
+.profile_hero{
+  color: #606060;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.p-quiz-container {
+    margin-top: 48px;
+  }
+.p-quiz-box{
+    padding: 30px 20px 0 20px;
+}
+  .p-quiz-box:not(:first-of-type) {
+    margin-top: 80px;
+  }
+  .p-quiz-box__label {
+    background-color: #0071bc;
+    border-radius: 8px;
+    color: #fff;
+    display: inline-block;
+    font-family: "Plus Jakarta Sans", "Noto Sans JP", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+    padding: 8px 16px;
+  }
+  .p-quiz-box__label--accent {
+    background-color: #e34e70;
+  }
+  .p-quiz-box__question{
+    width: 100%;
+    max-width: 1032px;
+    margin: 0 auto;
+  }
+  .p-quiz-box__question__title__text {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.8;
+    margin-top: 16px;
+  }
+  .p-quiz-box__question__image {
+    margin: 24px auto 0;
+    max-width: 718px;
+  }
+  .p-quiz-box__answer__list {
+    display: -ms-grid;
+    display: grid;
+    gap: 8px;
+    margin-top: 16px;
+  }
+  .p-quiz-box__answer__button {
+    align-items: center;
+    border: solid 4px #eee;
+    border-radius: 8px;
+    display: flex;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.8;
+    padding: 16px;
+    text-align: left;
+    width: 100%;
+  }
+  .p-quiz-box__answer__button .u-icon__arrow {
+    font-size: 12px;
+    margin-left: auto;
+  }
+  .p-quiz-box__answer__button:disabled .u-icon__arrow {
+    display: none;
+  }
+  .p-quiz-box__answer__button.is-selected {
+    background-color: #eff2f5;
+    border-color: #0071bc;
+  }
+  .p-quiz-box__answer__button.is-selected .u-icon__arrow {
+    display: none;
+  }
+  .p-quiz-box__answer__correct {
+    background-color: #fff2f5;
+    border-radius: 8px;
+    display: none;
+    margin-top: 16px;
+    padding: 24px 40px;
+  }
+  .p-quiz-box__answer__correct.is-correct {
+    display: block;
+  }
+  .p-quiz-box__answer__correct.is-incorrect {
+    background-color: #eff2f5;
+    display: block;
+  }
+  .p-quiz-box__answer__correct__title {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    line-height: 1.5;
+  }
+  .is-correct .p-quiz-box__answer__correct__title {
+    color: #e34e70;
+  }
+  .is-incorrect .p-quiz-box__answer__correct__title {
+    color: #0071bc;
+  }
+  .p-quiz-box__answer__correct__content {
+    align-items: baseline;
+    display: flex;
+    font-size: 18px;
+    font-weight: bold;
+    gap: 18px;
+    line-height: 1.8;
+    margin-top: 16px;
+  }
+  .p-quiz-box__answer__correct__content__label {
+    font-family: "Plus Jakarta Sans", "Noto Sans JP", sans-serif;
+    font-size: 24px;
+  }
+  .p-quiz-container {
+    margin-top: 120px;
+  }
+  .p-quiz-box:not(:first-of-type) {
+    margin-top: 120px;
+  }
+  .p-quiz-box__label {
+    font-size: 36px;
+  }
+  .p-quiz-box__question__title__text {
+    font-size: 36px;
+    line-height: 1.5;
+    margin-top: 24px;
+  }
+  .p-quiz-box__question__image {
+    margin-top: 64px;
+  }
+  .p-quiz-box__answer {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 1032px;
+    margin: 0 auto;
+  }
+  .p-quiz-box__answer__list {
+    gap: 24px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .p-quiz-box__answer__button {
+    border-width: 5px;
+    font-size: 18px;
+    padding: 19px;
+  }
+  .p-quiz-box__answer__button .u-icon__arrow {
+    font-size: 16px;
+  }
+
+.profile{
+    box-shadow :0px 0px 3px #EEEEEE;
+    background: #EEEEEE;
+    border-radius: 50px;
+    width: 50%;
+    margin: 100px auto 50px;
+    padding-bottom: 30px;
+}
+.profile_img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.profile_img_saki{
+    width: 15rem;
+    height: 15rem;
+    border-radius:50%;
+    background-position: 48% 52%;
+    background-image: url(../img/profile/profile_saki.jpg);
+    background-size: 300%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.profile_img_ayumi{
+    width: 15rem;
+    height: 15rem;
+    border-radius:50%;
+    background-position: 50% 40%;
+    background-image: url(../img/profile/profile_ayumi2.jpg);
+    background-size: 130%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.profile_img_taisei{
+    width: 15rem;
+    height: 15rem;
+    border-radius:50%;
+    background-position: 50% 40%;
+    background-image: url(../img/profile/profile_taisei.jpg);
+    background-size: 300%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.profile_img_miharu{
+  width: 15rem;
+  height: 15rem;
+  border-radius:50%;
+  background-position: 50% 45%;
+  background-image: url(../img/profile/profile_miharu.jpg);
+  background-size: 160%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.profile_img_hinata{
+  width: 15rem;
+  height: 15rem;
+  border-radius:50%;
+  background-position: 100% 37%;
+  background-image: url(../img/profile/profile_hinata.jpg);
+  background-size: 350%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.profile_detail{
+    display: flex;
+    justify-content: center;
+    line-height: 2.5;
+    font-size: 16px;
+}
+.profile_sns{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    gap: 50px;
+}
+.profiler_sns_item{
+    display: flex;
+}
+.twitter , .instagram{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+    text-align: center;
+}
+.twitter img{
+    width: 80px;
+}
+.instagram img{
+    width: 80px;
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width:768px){
+  .profile_hero{
+    font-size: 16px;
+  }
+}
