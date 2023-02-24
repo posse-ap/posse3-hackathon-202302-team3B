@@ -17,27 +17,27 @@
     {
       question: '大学でどの学部に在籍しているでしょう？',
       answers: ['理工学部', '経営学部', '商学部'],
-      correctNumber: 1,
+      correctNumber: 0,
     },
     {
       question: '出身地はどこでしょう？',
       answers: ['神奈川県横浜市', '埼玉県和光市', '東京都八王子市'],
-      correctNumber: 2,
+      correctNumber: 0,
     },
     {
       question: '趣味はなんでしょう？',
       answers: ['推し活', '飼っているデグー(ネズミの親戚の動物)のまろんくんと戯れること', 'Youtubeのネタ動画見ること'],
-      correctNumber: 0,
+      correctNumber: 1,
     },
     {
       question: '最近ハマっていることはなんでしょう？',
       answers: ['邦ロックを聞き漁ること', 'MARVEL見ること', '野菜生活グリーンスムージーを飲むこと'],
-      correctNumber: 0,
+      correctNumber: 2,
     },
     {
       question: '将来の夢はなんでしょう？',
       answers: ['毎日笑って過ごすこと', 'のんびりと暮らすこと', '誠実に生きること'],
-      correctNumber: 0,
+      correctNumber: 1,
     },
   ];
 
